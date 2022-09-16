@@ -1,7 +1,22 @@
 /* font-family: "Playfair Display", serif;
 font-family: "Poppins", sans-serif; */
+body {
+  text-align: center;
+}
 
-h1 {
+:root {
+  --color-primary: #fd729b;
+  --buttons-transition: all 0.2s ease-out;
+  --buttons-border: 1px solid #fd729b;
+  --box-shadow: 3px 5px 15px lightgrey;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: black;
   font-family: "Playfair Display", serif;
   font-weight: bold;
@@ -10,4 +25,68 @@ h1 {
 p {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
+}
+
+.hero {
+  padding: 200px 20px;
+  background-color: #fff7f9;
+}
+
+.hello {
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.name {
+  font-size: 48px;
+  margin: 30px 0;
+}
+
+.country {
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 70%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  margin: 30px 20px;
+  padding: 15px 25px;
+  border: var(--buttons-border);
+  border-radius: 7px;
+  text-decoration: none;
+  box-shadow: 10px 5px 10px lightgrey;
+  width: 160px;
+  max-width: 40%;
+}
+
+.button-contact {
+  color: white;
+  background: var(--color-primary);
+}
+
+.button-about {
+  color: var(--color-primary);
+}
+
+.button-contact:hover {
+  transition: var(--buttons-transition);
+  color: var(--color-primary);
+  background-color: white;
+}
+
+.button-about:hover {
+  transition: var(--buttons-transition);
+  color: white;
+  background-color: var(--color-primary);
+}
+
+@media (max-width: 420px) {
+  .button {
+    font-size: smaller;
+  }
 }
