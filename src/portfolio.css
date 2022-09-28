@@ -1,8 +1,5 @@
 /* font-family: "Playfair Display", serif;
 font-family: "Poppins", sans-serif; */
-body {
-  text-align: center;
-}
 
 :root {
   --color-primary: #fd729b;
@@ -85,8 +82,30 @@ p {
   background-color: var(--color-primary);
 }
 
-@media (max-width: 420px) {
+.about-section {
+  padding-top: 150px;
+}
+
+.about-me {
+  font-size: smaller;
+}
+
+.button-see-my-project {
+  margin-bottom: 30px;
+  padding: 15px 25px;
+  border: var(--buttons-border);
+  border-radius: 7px;
+  text-decoration: none;
+  box-shadow: 10px 5px 10px lightgrey;
+}
+
+@media (max-width: 767px) {
   .button {
     font-size: smaller;
+  }
+
+  .about-section {
+    text-align: center;
+    padding: 30px;
   }
 }
