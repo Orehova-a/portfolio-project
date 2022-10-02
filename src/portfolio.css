@@ -82,7 +82,7 @@ p {
   background-color: var(--color-primary);
 }
 
-.about-section {
+.content-section {
   padding-top: 150px;
 }
 
@@ -91,7 +91,7 @@ p {
 }
 
 .button-see-my-project {
-  margin-bottom: 30px;
+  margin: 30px 0;
   padding: 15px 25px;
   border: var(--buttons-border);
   border-radius: 7px;
@@ -99,13 +99,29 @@ p {
   box-shadow: 10px 5px 10px lightgrey;
 }
 
+.app-blocks {
+  gap: 20px;
+}
+
+.app-block {
+  background: rgb(253, 114, 155, 0.05);
+  border: 10px solid white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: var(--box-shadow);
+}
+
 @media (max-width: 767px) {
   .button {
     font-size: smaller;
   }
 
-  .about-section {
+  .content-section {
     text-align: center;
     padding: 30px;
+  }
+
+  .button-see-my-project {
+    font-size: 13px;
   }
 }
