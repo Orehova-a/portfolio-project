@@ -144,6 +144,39 @@ nav li.active a {
   box-shadow: var(--box-shadow);
 }
 
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-box {
+  background: #fff7f9;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+footer .email-link:hover {
+  color: var(--color-primary);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--color-primary);
+  background-color: #fff7f9;
+  padding: 10px 12px;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+footer .social-links a:hover {
+  transition: var(--buttons-transition);
+  color: #fff7f9;
+  background-color: var(--color-primary);
+}
+
 @media (max-width: 767px) {
   .button {
     font-size: smaller;
